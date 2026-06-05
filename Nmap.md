@@ -31,7 +31,7 @@ TCP Connect scans perform a complete TCP three-way handshake with the target ser
 
 Example:
 
-nmap \-sT \<target-ip\>
+nmap \-sT 10.49.139.250
 
 Characteristics:
 
@@ -104,7 +104,7 @@ Nmap can identify versions of services running on discovered ports.
 
 Example:
 
-nmap \-sV10.49.139.250
+nmap \-sV 10.49.139.250
 
 Benefits:
 
@@ -139,7 +139,7 @@ One of Nmap's most powerful features is the Nmap Scripting Engine.
 
 Example:
 
-nmap \--script vuln \<target-ip\>
+nmap \--script vuln 10.49.139.250
 
 NSE scripts can perform:
 
