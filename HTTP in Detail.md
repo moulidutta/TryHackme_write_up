@@ -27,8 +27,9 @@ HTTP/1.1 200 OK
 Content-Type: text/html
 
 The client sends a request and the server returns a response.
+<img width="799" height="775" alt="Screenshot 2026-06-06 224123" src="https://github.com/user-attachments/assets/8d30f2e0-3181-4af9-bde7-1ba366105a53" />
+<img width="784" height="226" alt="Screenshot 2026-06-06 223144" src="https://github.com/user-attachments/assets/47dbafec-50f7-4569-9492-4871ac45ee5d" />
 
-![][image1]
 
 **Example Response:**
 
@@ -58,7 +59,6 @@ Content-Length: 98
 
 \</html\>
 
-![][image2]
 
 ## **HTTP Methods**
 
@@ -129,8 +129,10 @@ Headers often contain valuable information during investigations.
 ## **Cookies and Sessions**
 
 Cookies allow websites to maintain user sessions.
+<img width="799" height="775" alt="Screenshot 2026-06-06 224123" src="https://github.com/user-attachments/assets/b284b208-eada-4f05-abde-136373498c63" />
 
-![][image3]
+
+
 
 Example:
 
@@ -142,24 +144,31 @@ Session management is an important component of web application security.
 
 ***Make a GET request to /room page :***   
 ***Ans: THM{YOU'RE\_IN\_THE\_ROOM}***  
-![][image4]
+<img width="822" height="634" alt="Screenshot 2026-06-06 230414" src="https://github.com/user-attachments/assets/655e5f74-02c6-4c64-9f94-8af17710ea56" />
+
+
 
 ***Make a GET request to /blog page and set the id parameter to 1***   
 ***Ans: THM{YOU\_FOUND\_THE\_BLOG}***  
-![][image5]
+
+<img width="597" height="638" alt="Screenshot 2026-06-06 230729" src="https://github.com/user-attachments/assets/631565dc-640a-4837-91f5-fe35cbe724ec" />
+
 
 ***Make a DELETE request to /user/1 page***  
 ***Ans: THM{USER\_IS\_DELETED}***  
-![][image6]
+<img width="811" height="658" alt="Screenshot 2026-06-06 230857" src="https://github.com/user-attachments/assets/570177de-bc85-45c8-9c36-d1a15702ea5b" />
+
 
 ***Make a PUT request to /user/2 page with the username parameter set to admin***   
 ***Ans: THM{USER\_HAS\_UPDATED}***  
-![][image7]
+<img width="762" height="719" alt="Screenshot 2026-06-06 231349" src="https://github.com/user-attachments/assets/3dd4d688-f6a8-4588-802b-b05cebf131e0" />
+
 
 ***Make a POST request to /login page with the username of thm and a password of letmein*** 
 
 ***Ans: THM{HTTP\_REQUEST\_MASTER}***  
-![][image8]
+
+<img width="750" height="704" alt="Screenshot 2026-06-06 231630" src="https://github.com/user-attachments/assets/fb435ed8-339f-45b1-9301-3ff9a5b21782" />
 
 ## **Security Relevance**
 
