@@ -18,8 +18,7 @@ This repository contains my write-ups and notes from various TryHackMe rooms com
 * Defensive Security Concepts
 * Security Documentation
 
-## Disclaimer
-
+## Disclaimer 
 These write-ups are intended for educational purposes only and are based on publicly available TryHackMe rooms. No flags, answers, or copyrighted content are reproduced beyond what is necessary for learning and documentation.
 
 ## Author
