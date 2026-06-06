@@ -27,7 +27,6 @@ HTTP/1.1 200 OK
 Content-Type: text/html
 
 The client sends a request and the server returns a response.
-<img width="799" height="775" alt="Screenshot 2026-06-06 224123" src="https://github.com/user-attachments/assets/8d30f2e0-3181-4af9-bde7-1ba366105a53" />
 <img width="784" height="226" alt="Screenshot 2026-06-06 223144" src="https://github.com/user-attachments/assets/47dbafec-50f7-4569-9492-4871ac45ee5d" />
 
 
