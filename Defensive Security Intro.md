@@ -304,17 +304,17 @@ This action will open a "static site" on the right side of your screen. Follow t
 
 # **Key Concepts Learned**
 
-### **Blue Team** : The defensive side of cybersecurity responsible for protecting systems.
+**Blue Team** : The defensive side of cybersecurity responsible for protecting systems.
 
-### **SOC** : The frontline team responsible for monitoring and detecting threats.
+**SOC** : The frontline team responsible for monitoring and detecting threats.
 
-### **Threat Intelligence** : Understanding attackers before they attack.
+**Threat Intelligence** : Understanding attackers before they attack.
 
-### **DFIR** : Investigating incidents and recovering from attacks.
+**DFIR** : Investigating incidents and recovering from attacks.
 
-### **SIEM** : Centralized log collection and threat detection.
+**SIEM** : Centralized log collection and threat detection.
 
-### **Malware Analysis** : Understanding malicious software to improve defenses.
+**Malware Analysis** : Understanding malicious software to improve defenses.
 
 ---
 
