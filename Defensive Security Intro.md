@@ -377,12 +377,9 @@ Understanding attackers before they attack.
 Investigating incidents and recovering from attacks.
 
 ### **SIEM**
-
 Centralized log collection and threat detection.
 
-### **Malware Analysis**
-
-Understanding malicious software to improve defenses.
+### **Malware Analysis** : Understanding malicious software to improve defenses.
 
 ---
 
