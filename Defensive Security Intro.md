@@ -349,6 +349,12 @@ The prepared simplified, interactive simulation of a SIEM system to provide you 
 (To start this simulation, please click the "View Site" button below.)
 
 This action will open a "static site" on the right side of your screen. Follow the step-by-step instructions provided within the simulation to navigate through the events and locate the "flag." A flag is a series of characters with a format like this: "THM{RANDOM\_WORDS}". Use this flag to answer questions from lessons here in TryHackMe, like the one below.
+<img width="821" height="822" alt="Screenshot 2026-06-08 232905" src="https://github.com/user-attachments/assets/4bbe5c17-2dbf-46b5-a695-9dc06e29e088" />
+<img width="760" height="804" alt="Screenshot 2026-06-08 232948" src="https://github.com/user-attachments/assets/92a8a2fb-675c-4f1d-8876-30c73dfc3429" />
+<img width="810" height="359" alt="Screenshot 2026-06-08 233026" src="https://github.com/user-attachments/assets/1c6646bc-93c8-48cd-9c50-07b25d29ffe0" />
+
+
+
 
 # 
 
