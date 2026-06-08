@@ -4,10 +4,11 @@ This repository contains my write-ups and notes from various TryHackMe rooms com
 
 ## Rooms Completed
 
-| Room                     | Topic                                                        |
-| ------------------------ | ------------------------------------------------------------ |
-| Nmap                     | Network Scanning and Enumeration                             |
-| HTTP in Detail           | HTTP Requests, Responses, Headers, Methods, and Status Codes |
+| Room                            | Topic                                                        |
+| ------------------------------- | ------------------------------------------------------------ |
+| Nmap                            | Network Scanning and Enumeration                             |
+| HTTP in Detail                  | HTTP Requests, Responses, Headers, Methods, and Status Codes |
+| AI_Ml Security Threats          | AI, ML, DL, LLM associated with security risk                |
 
 ## Skills Demonstrated
 
@@ -17,6 +18,7 @@ This repository contains my write-ups and notes from various TryHackMe rooms com
 * Web Fundamentals
 * Defensive Security Concepts
 * Security Documentation
+* AI_Ml associated with security
 
 ## Disclaimer 
 These write-ups are intended for educational purposes only and are based on publicly available TryHackMe rooms. No flags, answers, or copyrighted content are reproduced beyond what is necessary for learning and documentation.
