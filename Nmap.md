@@ -111,7 +111,6 @@ Benefits:
 * Identifies software versions  
 * Assists vulnerability research  
 * Helps prioritize investigation efforts
-
 ---
 
 ## **Aggressive Scan Mode**
@@ -119,7 +118,6 @@ Benefits:
 The room demonstrated aggressive scanning mode.
 
 Example:
-
 nmap \-A 10.49.139.250
 
 This combines:
@@ -135,7 +133,7 @@ Aggressive mode provides detailed information but generates significantly more n
 
 ## **Nmap Scripting Engine (NSE)**
 
-One of Nmap's most powerful features is the Nmap Scripting Engine.
+One of Nmap's most powerful features is the Nmap Scripting Engine. The Nmap Scripting Engine (NSE) is an incredibly powerful addition to Nmap, extending its functionality quite considerably. NSE Scripts are written in the Lua programming language, and can be used to do a variety of things: from scanning for vulnerabilities, to automating exploits for them. The NSE is particularly useful for reconnaisance, however, it is well worth bearing in mind how extensive the script library is.
 
 Example:
 
