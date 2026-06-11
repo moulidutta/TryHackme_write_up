@@ -35,9 +35,7 @@ By completing this room, I learned:
 # **Task 1: Introduction**
 
 The room starts with an important concept:
-
 Every AI model is a product of its training data.
-
 Before an AI model generates a response, predicts an outcome, or assists a user, countless decisions have already been made regarding:
 
 * What data was collected  
@@ -46,11 +44,9 @@ Before an AI model generates a response, predicts an outcome, or assists a user,
 * How it was filtered
 
 These decisions directly influence the behavior and security of the final model.
-
 One of the key messages of the room is that AI security begins long before deployment. It starts within the data supply chain itself.
 
 ---
-
 # **Task 2: Training Data**
 
 ## **Where Does AI Training Data Come From?**
@@ -60,7 +56,6 @@ Training modern AI models requires enormous amounts of data.
 The room explains four common sources:
 
 ### **Web Scraping**
-
 Data collected automatically from:
 
 * Websites  
@@ -68,23 +63,17 @@ Data collected automatically from:
 * Forums  
 * Social media platforms  
 * News articles
-
 This source is highly scalable but often poorly controlled.
 
 ### **Licensed Datasets**
-
 Datasets acquired through agreements with organizations or platforms.
-
 These typically offer better legal clarity but may still raise privacy concerns.
 
 ### **Synthetic Data**
-
 AI-generated content used to train future AI systems.
-
 As AI adoption grows, synthetic data is becoming increasingly common.
 
 ### **Internal Corpora**
-
 Private organizational data such as:
 
 * Support tickets  
@@ -103,13 +92,11 @@ One of the most important concepts introduced in this room is:
 ### **Data Provenance**
 
 Data provenance answers three questions:
-
 1. Where did the data come from?  
 2. When was it collected?  
 3. Has it been modified?
 
 Without proper provenance, organizations cannot verify the quality, legality, or security of training data.
-
 A major concern highlighted in the room is that many modern AI datasets are built from numerous sources, making it difficult to track their origins accurately.
 
 ---
@@ -121,7 +108,6 @@ The room introduces the concept of an:
 ### **ML-BOM (Machine Learning Bill of Materials)**
 
 This is similar to a Software Bill of Materials (SBOM) used in software security.
-
 An ML-BOM documents:
 
 * Dataset sources  
@@ -137,7 +123,6 @@ This improves transparency and helps organizations understand what they are actu
 ## **PII in Training Data**
 
 One of the most alarming sections discusses Personally Identifiable Information (PII).
-
 Large-scale web scraping may unintentionally collect:
 
 * Email addresses  
@@ -147,7 +132,6 @@ Large-scale web scraping may unintentionally collect:
 * API keys
 
 If this information becomes part of a model's training dataset, fragments of that data may become embedded within the model itself.
-
 The room emphasizes that once information is encoded into model weights, removing it becomes extremely difficult.
 
 ---
@@ -169,9 +153,7 @@ Models often train across many epochs to improve performance.
 ### **Overfitting**
 
 Overfitting occurs when a model memorizes training data instead of learning general patterns.
-
 Symptoms include:
-
 * Excellent performance on training data  
 * Poor performance on new data
 
@@ -180,17 +162,13 @@ From a security perspective, overfitting increases the likelihood that sensitive
 ---
 
 ## **Model Validation**
-
 To reduce overfitting, developers use:
 
 ### **Validation Sets**
-
 A portion of the dataset is withheld during training.
-
 The model is periodically tested using this unseen data.
 
 Benefits include:
-
 * Detecting overfitting  
 * Evaluating real-world performance  
 * Identifying data quality issues
@@ -200,20 +178,19 @@ Validation acts as a security checkpoint before deployment.
 ---
 
 ## **Quantisation**
-
 Modern AI models can be extremely large.
-
 To improve efficiency, developers often compress them using:
 
 ### **Quantisation**
-
 This process reduces numerical precision within model weights.
-
 Benefits:
 
 * Lower memory usage  
 * Faster inference  
 * Reduced hardware requirements
+
+<img width="883" height="545" alt="Screenshot 2026-06-09 230248" src="https://github.com/user-attachments/assets/49043c84-107a-4547-bfe0-1d284682369a" />
+
 
 However, the room explains that quantization may unintentionally weaken safety mechanisms or alter model behavior in unexpected ways.
 
@@ -222,17 +199,12 @@ However, the room explains that quantization may unintentionally weaken safety m
 ## **Federated Learning**
 
 Traditional AI training gathers all data in a centralized location. Federated learning is therefore an interesting case study in security trade-offs: it solves one trust problem by distributing control, but in doing so creates a different one. 
-
 Federated Learning takes a different approach.
-
 Instead:
-
 * Training occurs locally.  
 * Devices keep their data.  
 * Only model updates are shared.
-
 Benefits include:
-
 * Improved privacy  
 * Reduced data sharing requirements
 
@@ -243,15 +215,12 @@ However, verifying the integrity of contributed updates becomes more difficult. 
 # **Task 4: Pre-Trained Models and Fine-Tuning**
 
 Most organizations do not build AI models from scratch.
-
 Instead, they begin with:
 
 ### **Pre-Trained Models**
 
 These are models already trained on massive datasets.
-
 Examples include:
-
 * Foundation models  
 * Large Language Models (LLMs)
 
@@ -262,7 +231,6 @@ Organizations then customize them through:
 Fine-tuning is the process of continuing to train one of these pre-trained models on a smaller, task-specific dataset. A healthcare company might fine-tune a base model trained on clinical documentation to improve its understanding of medical terminology. A law firm might fine-tune on case law. The result is a model with the broad capabilities of the base model, now specialised for a particular domain or use case. Fine-tuning involves continuing training using a smaller, specialized dataset.
 
 Examples:
-
 * Healthcare AI  
 * Legal AI  
 * Cybersecurity AI  
@@ -279,14 +247,12 @@ One of the most important lessons from this room is:
 ### **Fine-tuning does not remove inherited risks.**
 
 Organizations inherit:
-
 * Existing biases  
 * Hidden vulnerabilities  
 * Undocumented behaviors  
 * Safety limitations
 
 from the original model.
-
 Even if a company carefully fine-tunes a model, it still inherits everything embedded within the base model.
 
 ---
@@ -295,19 +261,15 @@ Even if a company carefully fine-tunes a model, it still inherits everything emb
 
 The room highlights several concerns.
 
-### **Safety Alignment Degradation**
+**Safety Alignment Degradation** : Security controls built into the original model may weaken during fine-tuning.
 
-Security controls built into the original model may weaken during fine-tuning.
+**Increased Attack Surface** : Specialized models may become more susceptible to prompt injection attacks.
 
-### **Increased Attack Surface**
-
-Specialized models may become more susceptible to prompt injection attacks.
-
-### **Version Tracking Challenges**
-
-Organizations often struggle to determine exactly which model version was used during development.
+**Version Tracking Challenges** : Organizations often struggle to determine exactly which model version was used during development.
 
 This makes risk assessment significantly more difficult.
+<img width="860" height="153" alt="Screenshot 2026-06-09 224442" src="https://github.com/user-attachments/assets/501aec9f-388a-4baa-bda9-633b00dd49d4" />
+
 
 ---
 
@@ -316,29 +278,22 @@ This makes risk assessment significantly more difficult.
 Unlike traditional software, AI models are difficult to inspect.
 
 With source code, developers can:
-
 * Review logic  
 * Analyze functions  
 * Audit behavior
 
 AI models are different.
-
 Their knowledge is encoded within billions of numerical parameters known as:
 
 ### **Model Weights**
 
 These weights are not human-readable.
-
 As a result, it is often impossible to determine exactly why a model behaves a certain way.
-
 ---
-
 ## **Model Cards**
-
 The documentation artefact designed to address this is the model card: a structured document that accompanies a model and describes what it is, how it was built, and where it falls short. To improve transparency, organizations use:
 
 ### **Model Cards**
-
 A model card provides documentation about:
 
 * Training data  
@@ -349,20 +304,16 @@ A model card provides documentation about:
 * Licensing information
 
 Think of a model card as a nutritional label for AI systems.
-
 It helps users understand what they are using and the limitations that may exist.
 
 ---
-
 ## **Why Model Cards Matter**
-
 Without a model card:
-
 * Transparency is reduced.  
 * Security review becomes harder.  
 * Risk assessment becomes less reliable.  
 * Trust must be placed entirely in the vendor.
-
+  
 The room emphasizes that a missing or incomplete model card should be treated as a warning sign.
 
 ---
@@ -370,11 +321,9 @@ The room emphasizes that a missing or incomplete model card should be treated as
 # **Task 6: Practical Exercise**
 
 The final task places the learner in the role of a security auditor.
-
 A simulated AI model repository is presented, similar to platforms used for sharing open-source AI models.
 
 The objective is to identify:
-
 * Missing documentation  
 * Security red flags  
 * Data transparency issues  
@@ -411,37 +360,21 @@ This exercise reinforces the importance of reviewing the AI supply chain before 
 
 # **Key Concepts Learned**
 
-### **Data Provenance**
+**Data Provenance** : Understanding where training data originated.
 
-Understanding where training data originated.
+**ML-BOM** : Tracking datasets, licenses, and filtering decisions.
 
-### **ML-BOM**
+**Overfitting** : Memorizing data instead of learning patterns.
 
-Tracking datasets, licenses, and filtering decisions.
+**Quantization** : Compressing models for efficiency.
 
-### **Overfitting**
+**Federated Learning** : Distributed model training without centralized data collection.
 
-Memorizing data instead of learning patterns.
+**Fine-Tuning** : Customizing pre-trained models for specific use cases.
 
-### **Quantization**
+**Inheritance Problem**: Inheriting hidden risks from base models.
 
-Compressing models for efficiency.
-
-### **Federated Learning**
-
-Distributed model training without centralized data collection.
-
-### **Fine-Tuning**
-
-Customizing pre-trained models for specific use cases.
-
-### **Inheritance Problem**
-
-Inheriting hidden risks from base models.
-
-### **Model Cards**
-
-Providing transparency for AI systems.
+**Model Cards** : Providing transparency for AI systems.
 
 ---
 
