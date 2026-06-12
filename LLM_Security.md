@@ -207,9 +207,7 @@ This is particularly concerning when models are trained on sensitive datasets.
 This section focuses on one of the most important topics in modern AI security.
 
 The room explains that LLMs process all input as a single context window.
-
 This means:
-
 * System instructions  
 * User prompts  
 * Retrieved documents
@@ -227,24 +225,18 @@ Prompt injection is one of the most widely known LLM attacks.
 An attacker attempts to override the intended instructions of the model using carefully crafted language.
 
 Examples include:
-
 * Ignoring security restrictions  
 * Revealing hidden prompts  
 * Bypassing safeguards  
 * Performing unintended actions
-
 The room describes prompt injection as a consequence of context-window manipulation.
 
 ### **Why It Happens**
-
 Traditional software separates:
-
 * Code  
 * Data
 
-LLMs do not make this distinction reliably.
-
-Everything enters the context window as text, making prompt injection fundamentally different from traditional software vulnerabilities.
+LLMs do not make this distinction reliably.Everything enters the context window as text, making prompt injection fundamentally different from traditional software vulnerabilities.
 
 ---
 
@@ -253,13 +245,11 @@ Everything enters the context window as text, making prompt injection fundamenta
 Context Overflow (LLM10:2025 — Unbounded Consumption): Every LLM has a finite context window.
 
 Attackers may abuse this limitation by:
-
 * Submitting extremely large prompts  
 * Flooding the context window  
 * Pushing critical instructions out of memory
 
 Potential impacts include:
-
 * Reduced performance  
 * Ignored safeguards  
 * Denial of service conditions
@@ -271,13 +261,9 @@ The room maps this threat to OWASP's concept of unbounded consumption.
 ## **Memory Poisoning**
 
 Many AI assistants maintain conversation history.
-
 Attackers can exploit this by gradually introducing false information into the model's memory.
-
 Over time, the model may begin treating malicious information as trusted context.
-
 Example:
-
 If an attacker repeatedly teaches incorrect facts to a chatbot, future responses may become corrupted.
 
 Unlike prompt injection, memory poisoning often occurs across multiple interactions rather than a single prompt.
@@ -289,9 +275,7 @@ Unlike prompt injection, memory poisoning often occurs across multiple interacti
 # **Task 5: User-Based Threats**
 
 Not every AI security threat targets the model.
-
 Sometimes the target is the human using it.
-
 This section focuses on how attackers leverage AI to manipulate people more effectively.
 
 ---
