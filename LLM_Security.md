@@ -281,6 +281,8 @@ Example:
 If an attacker repeatedly teaches incorrect facts to a chatbot, future responses may become corrupted.
 
 Unlike prompt injection, memory poisoning often occurs across multiple interactions rather than a single prompt.
+<img width="1576" height="372" alt="Screenshot 2026-06-12 232147" src="https://github.com/user-attachments/assets/5ff62a78-0c95-4e51-8727-d0fc89144560" />
+
 
 ---
 
