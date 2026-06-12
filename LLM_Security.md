@@ -290,9 +290,7 @@ Traditional phishing attacks often contain:
 * Obvious red flags
 
 LLMs change this completely.
-
 Attackers can generate:
-
 * Personalized phishing emails  
 * Convincing business communications  
 * Context-aware scams  
@@ -303,11 +301,8 @@ The result is a dramatic increase in the quality and scale of social engineering
 ---
 
 ## **Trust Exploitation**
-
 Trust Exploitation (LLM09:2025 — Misinformation): 
-
 Many users assume AI-generated information is accurate.
-
 Attackers can exploit this trust.
 
 Potential impacts include:
@@ -318,7 +313,6 @@ Potential impacts include:
 * Manipulating user behavior
 
 The room highlights that user trust itself becomes an attack surface when AI systems are involved.
-
 ---
 
 # **LLM Security Cheat Sheet**
@@ -339,7 +333,6 @@ This framework provides a simple way to classify and assess AI-related risks dur
 Throughout the room, a simulated AI assistant is used to demonstrate multiple attack techniques.
 
 The exercises include:
-
 * Performing membership inference.  
 * Recovering hidden information through model inversion.  
 * Demonstrating prompt injection.  
@@ -351,41 +344,23 @@ These practical demonstrations help illustrate how theoretical AI attacks can oc
 
 # **Key Concepts Learned**
 
-### **Training Data Extraction**
+### **Training Data Extraction** : Recovering memorized information from a model.
 
-Recovering memorized information from a model.
+**Membership Inference** : Determining whether specific data was included in training.
 
-### **Membership Inference**
+**Prompt Leakage** : Exposing hidden system instructions.
 
-Determining whether specific data was included in training.
+**Model Extraction** : Stealing model functionality through API interactions.
 
-### **Prompt Leakage**
+**Model Inversion** : Reconstructing information from model internals.
 
-Exposing hidden system instructions.
+**Prompt Injection** : Manipulating model behavior using crafted prompts.
 
-### **Model Extraction**
+**Context Overflow** : Abusing context-window limitations.
 
-Stealing model functionality through API interactions.
+**Memory Poisoning** : Corrupting persistent conversation history.
 
-### **Model Inversion**
-
-Reconstructing information from model internals.
-
-### **Prompt Injection**
-
-Manipulating model behavior using crafted prompts.
-
-### **Context Overflow**
-
-Abusing context-window limitations.
-
-### **Memory Poisoning**
-
-Corrupting persistent conversation history.
-
-### **AI-Powered Social Engineering**
-
-Using AI to improve phishing and manipulation attacks.
+**AI-Powered Social Engineering** : Using AI to improve phishing and manipulation attacks.
 
 ---
 
