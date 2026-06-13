@@ -207,9 +207,7 @@ This is particularly concerning when models are trained on sensitive datasets.
 This section focuses on one of the most important topics in modern AI security.
 
 The room explains that LLMs process all input as a single context window.
-
 This means:
-
 * System instructions  
 * User prompts  
 * Retrieved documents
@@ -227,24 +225,18 @@ Prompt injection is one of the most widely known LLM attacks.
 An attacker attempts to override the intended instructions of the model using carefully crafted language.
 
 Examples include:
-
 * Ignoring security restrictions  
 * Revealing hidden prompts  
 * Bypassing safeguards  
 * Performing unintended actions
-
 The room describes prompt injection as a consequence of context-window manipulation.
 
 ### **Why It Happens**
-
 Traditional software separates:
-
 * Code  
 * Data
 
-LLMs do not make this distinction reliably.
-
-Everything enters the context window as text, making prompt injection fundamentally different from traditional software vulnerabilities.
+LLMs do not make this distinction reliably.Everything enters the context window as text, making prompt injection fundamentally different from traditional software vulnerabilities.
 
 ---
 
@@ -253,13 +245,11 @@ Everything enters the context window as text, making prompt injection fundamenta
 Context Overflow (LLM10:2025 — Unbounded Consumption): Every LLM has a finite context window.
 
 Attackers may abuse this limitation by:
-
 * Submitting extremely large prompts  
 * Flooding the context window  
 * Pushing critical instructions out of memory
 
 Potential impacts include:
-
 * Reduced performance  
 * Ignored safeguards  
 * Denial of service conditions
@@ -271,25 +261,21 @@ The room maps this threat to OWASP's concept of unbounded consumption.
 ## **Memory Poisoning**
 
 Many AI assistants maintain conversation history.
-
 Attackers can exploit this by gradually introducing false information into the model's memory.
-
 Over time, the model may begin treating malicious information as trusted context.
-
 Example:
-
 If an attacker repeatedly teaches incorrect facts to a chatbot, future responses may become corrupted.
 
 Unlike prompt injection, memory poisoning often occurs across multiple interactions rather than a single prompt.
+<img width="1576" height="372" alt="Screenshot 2026-06-12 232147" src="https://github.com/user-attachments/assets/5ff62a78-0c95-4e51-8727-d0fc89144560" />
+
 
 ---
 
 # **Task 5: User-Based Threats**
 
 Not every AI security threat targets the model.
-
 Sometimes the target is the human using it.
-
 This section focuses on how attackers leverage AI to manipulate people more effectively.
 
 ---
@@ -304,9 +290,7 @@ Traditional phishing attacks often contain:
 * Obvious red flags
 
 LLMs change this completely.
-
 Attackers can generate:
-
 * Personalized phishing emails  
 * Convincing business communications  
 * Context-aware scams  
@@ -317,11 +301,8 @@ The result is a dramatic increase in the quality and scale of social engineering
 ---
 
 ## **Trust Exploitation**
-
 Trust Exploitation (LLM09:2025 — Misinformation): 
-
 Many users assume AI-generated information is accurate.
-
 Attackers can exploit this trust.
 
 Potential impacts include:
@@ -332,7 +313,6 @@ Potential impacts include:
 * Manipulating user behavior
 
 The room highlights that user trust itself becomes an attack surface when AI systems are involved.
-
 ---
 
 # **LLM Security Cheat Sheet**
@@ -353,7 +333,6 @@ This framework provides a simple way to classify and assess AI-related risks dur
 Throughout the room, a simulated AI assistant is used to demonstrate multiple attack techniques.
 
 The exercises include:
-
 * Performing membership inference.  
 * Recovering hidden information through model inversion.  
 * Demonstrating prompt injection.  
@@ -365,41 +344,23 @@ These practical demonstrations help illustrate how theoretical AI attacks can oc
 
 # **Key Concepts Learned**
 
-### **Training Data Extraction**
+### **Training Data Extraction** : Recovering memorized information from a model.
 
-Recovering memorized information from a model.
+**Membership Inference** : Determining whether specific data was included in training.
 
-### **Membership Inference**
+**Prompt Leakage** : Exposing hidden system instructions.
 
-Determining whether specific data was included in training.
+**Model Extraction** : Stealing model functionality through API interactions.
 
-### **Prompt Leakage**
+**Model Inversion** : Reconstructing information from model internals.
 
-Exposing hidden system instructions.
+**Prompt Injection** : Manipulating model behavior using crafted prompts.
 
-### **Model Extraction**
+**Context Overflow** : Abusing context-window limitations.
 
-Stealing model functionality through API interactions.
+**Memory Poisoning** : Corrupting persistent conversation history.
 
-### **Model Inversion**
-
-Reconstructing information from model internals.
-
-### **Prompt Injection**
-
-Manipulating model behavior using crafted prompts.
-
-### **Context Overflow**
-
-Abusing context-window limitations.
-
-### **Memory Poisoning**
-
-Corrupting persistent conversation history.
-
-### **AI-Powered Social Engineering**
-
-Using AI to improve phishing and manipulation attacks.
+**AI-Powered Social Engineering** : Using AI to improve phishing and manipulation attacks.
 
 ---
 
