@@ -69,7 +69,6 @@ This section breaks down the architecture of TryAssist.
 ---
 
 ## **Core Components**
-
 The room introduces nine major components commonly found in AI systems.
 
 ### **User Interface**
@@ -175,29 +174,17 @@ The OWASP LLM Top 10 categorizes the most important security risks affecting LLM
 
 Examples include:
 
-### **LLM01 – Prompt Injection**
+**LLM01 – Prompt Injection** : Manipulating model behavior through crafted inputs.
 
-Manipulating model behavior through crafted inputs.
+**LLM02 – Sensitive Information Disclosure** : Exposure of confidential information.
 
-### **LLM02 – Sensitive Information Disclosure**
+**LLM05 – Improper Output Handling** : Unsafe processing of model output.
 
-Exposure of confidential information.
+**LLM06 – Excessive Agency** : Granting AI systems excessive permissions.
 
-### **LLM05 – Improper Output Handling**
+**LLM07 – System Prompt Leakage** : Disclosure of hidden system instructions.
 
-Unsafe processing of model output.
-
-### **LLM06 – Excessive Agency**
-
-Granting AI systems excessive permissions.
-
-### **LLM07 – System Prompt Leakage**
-
-Disclosure of hidden system instructions.
-
-### **LLM10 – Unbounded Consumption**
-
-Resource exhaustion and cost-amplification attacks.
+**LLM10 – Unbounded Consumption** : Resource exhaustion and cost-amplification attacks.
 
 ---
 
@@ -211,7 +198,7 @@ The room also introduces:
 
 MITRE ATLAS serves as a knowledge base documenting attacker tactics, techniques, and procedures (TTPs) targeting AI and machine learning systems.
 
-It plays a role similar to MITRE ATT\&CK but focuses specifically on AI threats.
+ATLAS follows the adversary's progression through a target. An attacker begins with reconnaissance, learning what model the system uses and how it is exposed. They gain initial access by compromising a supply chain component or exploiting an input vector. They achieve execution through techniques like prompt injection, adversarial inputs, or model tampering. Where persistence is needed, they implant backdoors in model weights
 
 ---
 
@@ -307,8 +294,8 @@ Without proper controls, this data may leak through:
 * Responses  
 * Logs  
 * External model providers
+<img width="855" height="635" alt="Screenshot 2026-06-13 233557" src="https://github.com/user-attachments/assets/a5fee895-bf84-498b-be5c-a21bd3bc6569" />
 
-The room emphasizes that confidentiality remains a critical concern throughout the AI lifecycle.
 
 ---
 
@@ -333,6 +320,8 @@ Examples:
 | System → User | Output filtering |
 
 A failure at one layer should not compromise the entire system.
+<img width="882" height="541" alt="Screenshot 2026-06-13 233652" src="https://github.com/user-attachments/assets/c5f3b975-24c4-4e74-a702-4f3b7acd69bb" />
+
 
 ---
 
