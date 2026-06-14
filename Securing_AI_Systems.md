@@ -149,7 +149,6 @@ Every trust boundary creates an opportunity for attackers to influence system be
 The room walks through a complete request lifecycle.
 
 A user's question passes through:
-
 * Authentication  
 * Prompt construction  
 * Context retrieval  
@@ -211,19 +210,16 @@ This section examines five major AI security threats that originate from archite
 ## **LLM10: Unbounded Consumption**
 
 Attackers attempt to increase resource usage by:
-
 * Sending massive prompts  
 * Flooding APIs  
 * Consuming excessive tokens
 
 Potential impacts:
-
 * Increased operational costs  
 * Resource exhaustion  
 * Denial of service
 
 ### **Defenses**
-
 * Rate limiting  
 * Input length restrictions  
 * Usage quotas  
