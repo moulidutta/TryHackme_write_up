@@ -444,37 +444,21 @@ A key takeaway is that every AI component introduces additional trust boundaries
 
 # **Key Concepts Learned**
 
-### **Trust Boundaries**
+**Trust Boundaries** : Points where data crosses security contexts.
 
-Points where data crosses security contexts.
+**OWASP LLM Top 10** : Framework for AI application security risks.
 
-### **OWASP LLM Top 10**
+**MITRE ATLAS** : Knowledge base of AI attack techniques.
 
-Framework for AI application security risks.
+**Improper Output Handling** : Unsafe processing of model-generated output.
 
-### **MITRE ATLAS**
+**Excessive Agency** : Over-privileged AI systems.
 
-Knowledge base of AI attack techniques.
+**System Prompt Leakage** : Exposure of hidden instructions.
 
-### **Improper Output Handling**
+**Unbounded Consumption** : Cost and resource exhaustion attacks.
 
-Unsafe processing of model-generated output.
-
-### **Excessive Agency**
-
-Over-privileged AI systems.
-
-### **System Prompt Leakage**
-
-Exposure of hidden instructions.
-
-### **Unbounded Consumption**
-
-Cost and resource exhaustion attacks.
-
-### **MLSecOps**
-
-Security operations for AI and ML systems.
+**MLSecOps** : Security operations for AI and ML systems.
 
 ---
 
@@ -485,8 +469,6 @@ This room shifts the focus from attacking AI models to securing AI architectures
 The most valuable lesson was understanding that AI security is fundamentally an architectural challenge. Modern AI systems introduce entirely new components, trust boundaries, and attack surfaces that traditional web application security frameworks were never designed to handle.
 
 The room also provides an excellent introduction to OWASP LLM Top 10, MITRE ATLAS, trust boundary analysis, and MLSecOps—topics that are becoming increasingly important for security engineers, SOC analysts, cloud security professionals, and AI security practitioners.
-
-For anyone interested in AI Security, Security Architecture, Threat Modeling, or Secure AI Deployment, this room provides an outstanding foundation.
 
 ---
 
