@@ -361,25 +361,11 @@ The room introduces several AI-specific monitoring requirements.
 
 Examples include:
 
-### **Request Monitoring**
-
-Detect abnormal usage patterns.
-
-### **Token Monitoring**
-
-Identify cost-explosion attacks.
-
-### **Tool Invocation Monitoring**
-
-Track suspicious tool usage.
-
-### **Prompt Extraction Monitoring**
-
-Detect attempts to reveal system prompts.
-
-### **Budget Monitoring**
-
-Prevent runaway operational costs.
+**Request Monitoring** : Detect abnormal usage patterns.
+**Token Monitoring** : Identify cost-explosion attacks.
+**Tool Invocation Monitoring** : Track suspicious tool usage.
+**Prompt Extraction Monitoring** : Detect attempts to reveal system prompts.
+**Budget Monitoring** : Prevent runaway operational costs.
 
 Traditional monitoring alone is insufficient for AI systems.
 
@@ -392,7 +378,6 @@ The room introduces:
 ### **MLSecOps**
 
 Machine Learning Security Operations
-
 MLSecOps integrates security throughout the entire AI lifecycle:
 
 * Development  
@@ -419,7 +404,6 @@ Through a structured conversation with TryAssist, the goal is to evaluate:
 * Data retention policies
 
 The exercise demonstrates how architectural reviews can reveal security risks before production deployment.
-
 A key takeaway is that every AI component introduces additional trust boundaries and attack surfaces that must be assessed individually.
 
 ---
