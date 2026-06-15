@@ -386,8 +386,6 @@ The biggest takeaway for me was that AI security starts long before deployment. 
 
 As organizations increasingly adopt AI solutions, understanding concepts like ML-BOMs, model cards, data provenance, and the inheritance problem will become just as important as understanding traditional software supply-chain security.
 
-For cybersecurity professionals interested in AI security, governance, risk management, and secure AI deployment, this room provides an excellent foundation.
-
 ---
 
 **Room Status:** Completed ✅

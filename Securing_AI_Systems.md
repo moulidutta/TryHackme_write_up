@@ -69,7 +69,6 @@ This section breaks down the architecture of TryAssist.
 ---
 
 ## **Core Components**
-
 The room introduces nine major components commonly found in AI systems.
 
 ### **User Interface**
@@ -150,7 +149,6 @@ Every trust boundary creates an opportunity for attackers to influence system be
 The room walks through a complete request lifecycle.
 
 A user's question passes through:
-
 * Authentication  
 * Prompt construction  
 * Context retrieval  
@@ -175,29 +173,17 @@ The OWASP LLM Top 10 categorizes the most important security risks affecting LLM
 
 Examples include:
 
-### **LLM01 – Prompt Injection**
+**LLM01 – Prompt Injection** : Manipulating model behavior through crafted inputs.
 
-Manipulating model behavior through crafted inputs.
+**LLM02 – Sensitive Information Disclosure** : Exposure of confidential information.
 
-### **LLM02 – Sensitive Information Disclosure**
+**LLM05 – Improper Output Handling** : Unsafe processing of model output.
 
-Exposure of confidential information.
+**LLM06 – Excessive Agency** : Granting AI systems excessive permissions.
 
-### **LLM05 – Improper Output Handling**
+**LLM07 – System Prompt Leakage** : Disclosure of hidden system instructions.
 
-Unsafe processing of model output.
-
-### **LLM06 – Excessive Agency**
-
-Granting AI systems excessive permissions.
-
-### **LLM07 – System Prompt Leakage**
-
-Disclosure of hidden system instructions.
-
-### **LLM10 – Unbounded Consumption**
-
-Resource exhaustion and cost-amplification attacks.
+**LLM10 – Unbounded Consumption** : Resource exhaustion and cost-amplification attacks.
 
 ---
 
@@ -211,7 +197,7 @@ The room also introduces:
 
 MITRE ATLAS serves as a knowledge base documenting attacker tactics, techniques, and procedures (TTPs) targeting AI and machine learning systems.
 
-It plays a role similar to MITRE ATT\&CK but focuses specifically on AI threats.
+ATLAS follows the adversary's progression through a target. An attacker begins with reconnaissance, learning what model the system uses and how it is exposed. They gain initial access by compromising a supply chain component or exploiting an input vector. They achieve execution through techniques like prompt injection, adversarial inputs, or model tampering. Where persistence is needed, they implant backdoors in model weights
 
 ---
 
@@ -224,19 +210,16 @@ This section examines five major AI security threats that originate from archite
 ## **LLM10: Unbounded Consumption**
 
 Attackers attempt to increase resource usage by:
-
 * Sending massive prompts  
 * Flooding APIs  
 * Consuming excessive tokens
 
 Potential impacts:
-
 * Increased operational costs  
 * Resource exhaustion  
 * Denial of service
 
 ### **Defenses**
-
 * Rate limiting  
 * Input length restrictions  
 * Usage quotas  
@@ -307,8 +290,8 @@ Without proper controls, this data may leak through:
 * Responses  
 * Logs  
 * External model providers
+<img width="855" height="635" alt="Screenshot 2026-06-13 233557" src="https://github.com/user-attachments/assets/a5fee895-bf84-498b-be5c-a21bd3bc6569" />
 
-The room emphasizes that confidentiality remains a critical concern throughout the AI lifecycle.
 
 ---
 
@@ -333,6 +316,8 @@ Examples:
 | System → User | Output filtering |
 
 A failure at one layer should not compromise the entire system.
+<img width="882" height="541" alt="Screenshot 2026-06-13 233652" src="https://github.com/user-attachments/assets/c5f3b975-24c4-4e74-a702-4f3b7acd69bb" />
+
 
 ---
 
@@ -376,25 +361,11 @@ The room introduces several AI-specific monitoring requirements.
 
 Examples include:
 
-### **Request Monitoring**
-
-Detect abnormal usage patterns.
-
-### **Token Monitoring**
-
-Identify cost-explosion attacks.
-
-### **Tool Invocation Monitoring**
-
-Track suspicious tool usage.
-
-### **Prompt Extraction Monitoring**
-
-Detect attempts to reveal system prompts.
-
-### **Budget Monitoring**
-
-Prevent runaway operational costs.
+**Request Monitoring** : Detect abnormal usage patterns.
+**Token Monitoring** : Identify cost-explosion attacks.
+**Tool Invocation Monitoring** : Track suspicious tool usage.
+**Prompt Extraction Monitoring** : Detect attempts to reveal system prompts.
+**Budget Monitoring** : Prevent runaway operational costs.
 
 Traditional monitoring alone is insufficient for AI systems.
 
@@ -407,7 +378,6 @@ The room introduces:
 ### **MLSecOps**
 
 Machine Learning Security Operations
-
 MLSecOps integrates security throughout the entire AI lifecycle:
 
 * Development  
@@ -434,7 +404,6 @@ Through a structured conversation with TryAssist, the goal is to evaluate:
 * Data retention policies
 
 The exercise demonstrates how architectural reviews can reveal security risks before production deployment.
-
 A key takeaway is that every AI component introduces additional trust boundaries and attack surfaces that must be assessed individually.
 
 ---
@@ -475,37 +444,21 @@ A key takeaway is that every AI component introduces additional trust boundaries
 
 # **Key Concepts Learned**
 
-### **Trust Boundaries**
+**Trust Boundaries** : Points where data crosses security contexts.
 
-Points where data crosses security contexts.
+**OWASP LLM Top 10** : Framework for AI application security risks.
 
-### **OWASP LLM Top 10**
+**MITRE ATLAS** : Knowledge base of AI attack techniques.
 
-Framework for AI application security risks.
+**Improper Output Handling** : Unsafe processing of model-generated output.
 
-### **MITRE ATLAS**
+**Excessive Agency** : Over-privileged AI systems.
 
-Knowledge base of AI attack techniques.
+**System Prompt Leakage** : Exposure of hidden instructions.
 
-### **Improper Output Handling**
+**Unbounded Consumption** : Cost and resource exhaustion attacks.
 
-Unsafe processing of model-generated output.
-
-### **Excessive Agency**
-
-Over-privileged AI systems.
-
-### **System Prompt Leakage**
-
-Exposure of hidden instructions.
-
-### **Unbounded Consumption**
-
-Cost and resource exhaustion attacks.
-
-### **MLSecOps**
-
-Security operations for AI and ML systems.
+**MLSecOps** : Security operations for AI and ML systems.
 
 ---
 
@@ -516,8 +469,6 @@ This room shifts the focus from attacking AI models to securing AI architectures
 The most valuable lesson was understanding that AI security is fundamentally an architectural challenge. Modern AI systems introduce entirely new components, trust boundaries, and attack surfaces that traditional web application security frameworks were never designed to handle.
 
 The room also provides an excellent introduction to OWASP LLM Top 10, MITRE ATLAS, trust boundary analysis, and MLSecOps—topics that are becoming increasingly important for security engineers, SOC analysts, cloud security professionals, and AI security practitioners.
-
-For anyone interested in AI Security, Security Architecture, Threat Modeling, or Secure AI Deployment, this room provides an outstanding foundation.
 
 ---
 
