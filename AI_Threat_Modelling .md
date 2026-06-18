@@ -310,7 +310,8 @@ We adapted STRIDE for AI systems, but we also identified gaps where STRIDE's six
 
 What Is MITRE ATLAS?
 ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) is a knowledge base of adversary tactics and techniques targeting AI and ML systems. Think of it as MITRE ATT&CK's AI-focused counterpart. If you've used MITRE ATT&CK(opens in new tab) to map adversary behaviour against traditional infrastructure, ATLAS gives you the same structured approach for AI systems.
-<img width="607" height="759" alt="Screenshot 2026-06-18 223552" src="https://github.com/user-attachments/assets/469d6bfd-ba16-42ea-aefa-78143830a9af" />
+<img width="961" height="409" alt="Screenshot 2026-06-18 233421" src="https://github.com/user-attachments/assets/c2d94239-a7df-4431-9277-c5a705a31f8b" />
+
 
 
 
