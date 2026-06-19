@@ -40,7 +40,6 @@ By completing this room, I learned:
 # **Task 1: Introduction to Threat Modelling**
 
 The room begins by introducing a fundamental cybersecurity principle:
-
 It is easier and cheaper to prevent security issues during design than to fix them after deployment.
 
 Threat modelling is a structured process used to identify:
@@ -79,7 +78,6 @@ Each new component creates additional attack surfaces and trust boundaries.
 ### **Key Takeaway**
 
 AI security is not just application security plus an AI model.
-
 AI introduces entirely new security challenges that must be analyzed separately.
 
 ---
@@ -90,15 +88,11 @@ Before identifying threats, we must understand what requires protection.
 
 The room introduces the concept of:
 
-## **Assets**
-
-Assets are anything valuable that an attacker may target.
+**Assets** Assets are anything valuable that an attacker may target.
 
 Examples within AI systems include:
 
-### **Training Data**
-
-The data used to train machine learning models.
+**Training Data** The data used to train machine learning models.
 
 Potential risks:
 
@@ -194,7 +188,6 @@ The model may trigger unintended actions.
 ### **External Data → Application**
 
 Retrieved information may contain malicious content.
-
 Threat modelling focuses heavily on analyzing these boundaries because attackers often exploit them.
 
 ---
@@ -313,8 +306,14 @@ This provides security teams with a familiar framework while analyzing modern AI
 ---
 
 # **Task 5: Identifying AI Threats**
+We adapted STRIDE for AI systems, but we also identified gaps where STRIDE's six categories don't fully capture AI-specific threats. This is where MITRE ATLAS(opens in new tab) comes in.
 
-This section focuses on common AI attack scenarios.
+What Is MITRE ATLAS?
+ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) is a knowledge base of adversary tactics and techniques targeting AI and ML systems. Think of it as MITRE ATT&CK's AI-focused counterpart. If you've used MITRE ATT&CK(opens in new tab) to map adversary behaviour against traditional infrastructure, ATLAS gives you the same structured approach for AI systems.
+<img width="961" height="409" alt="Screenshot 2026-06-18 233421" src="https://github.com/user-attachments/assets/c2d94239-a7df-4431-9277-c5a705a31f8b" />
+
+
+
 
 ---
 
@@ -432,29 +431,17 @@ Once threats are identified, appropriate defenses can be designed.
 
 Examples include:
 
-### **Authentication and Authorization**
+**Authentication and Authorization** : Protect sensitive resources.
 
-Protect sensitive resources.
+**Least Privilege** : Limit permissions to only what is required.
 
-### **Least Privilege**
+**Input Validation** : Reduce prompt manipulation risks.
 
-Limit permissions to only what is required.
+**Output Filtering** : Prevent information disclosure.
 
-### **Input Validation**
+**Monitoring and Logging** : Improve visibility and incident response.
 
-Reduce prompt manipulation risks.
-
-### **Output Filtering**
-
-Prevent information disclosure.
-
-### **Monitoring and Logging**
-
-Improve visibility and incident response.
-
-### **Human Approval Workflows**
-
-Reduce risks associated with autonomous AI actions.
+**Human Approval Workflows** : Reduce risks associated with autonomous AI actions.
 
 The room emphasizes integrating security controls during system design rather than after deployment.
 
@@ -491,39 +478,30 @@ The room emphasizes integrating security controls during system design rather th
 # **Key Concepts Learned**
 
 ### **Threat Modelling**
-
 Structured identification of security risks during system design.
 
 ### **Assets**
-
 Valuable components requiring protection.
 
 ### **Data Flow Diagrams**
-
 Visual representations of system interactions.
 
 ### **Trust Boundaries**
-
 Points where data crosses security contexts.
 
 ### **STRIDE**
-
 Threat classification framework.
 
 ### **Prompt Injection**
-
 Manipulation of model instructions.
 
 ### **Data Poisoning**
-
 Compromising training datasets.
 
 ### **Risk Prioritization**
-
 Evaluating threats based on likelihood and impact.
 
 ### **Security Controls**
-
 Defensive measures integrated into system design.
 
 ---
@@ -536,7 +514,6 @@ The most valuable lesson was understanding that AI security begins long before d
 
 As AI adoption continues to grow, threat modelling will become an essential skill for security architects, AI engineers, SOC analysts, cloud security professionals, and AI security practitioners.
 
-For anyone interested in AI Security, Secure AI Development, Threat Modelling, or Security Architecture, this room provides a strong foundation for understanding how to identify and mitigate risks in AI-powered environments.
 
 ---
 
