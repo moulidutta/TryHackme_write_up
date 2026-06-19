@@ -305,6 +305,17 @@ The exercise demonstrates how reconnaissance provides the foundation for future 
 
 ## **Room Findings proof work:**
 
+<img width="1154" height="343" alt="Screenshot 2026-06-19 233309" src="https://github.com/user-attachments/assets/39dd5d21-7042-4cfd-968e-a7593d607220" />
+
+<img width="1155" height="438" alt="Screenshot 2026-06-19 233242" src="https://github.com/user-attachments/assets/6498ebfc-b8e8-4c2a-bbcb-eaa761ed7913" />
+
+<img width="1047" height="530" alt="Screenshot 2026-06-19 233213" src="https://github.com/user-attachments/assets/3ddf254d-87de-4221-a890-a639f759a300" />
+
+<img width="1090" height="513" alt="Screenshot 2026-06-19 233148" src="https://github.com/user-attachments/assets/43020a93-cc34-4cb1-81ba-8576dc894743" />
+
+
+
+
 ---
 
 # **Key Concepts Learned**
