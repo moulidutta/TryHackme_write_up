@@ -64,7 +64,7 @@ You cannot effectively secure or assess an AI system without understanding how i
 
 ---
 
-# **Task 2: Understanding the AI Architecture**
+# **Task 2: The AI Infrastructure Stack**
 
 ## **Overview**
 
@@ -119,11 +119,16 @@ Understanding each layer helps identify potential attack vectors.
 
 ---
 
-# **Task 3: Mapping Trust Boundaries**
+# **Task 3: Fingerprinting AI services**
 
 ## **Overview**
 
-One of the most important reconnaissance activities is identifying trust boundaries.
+Fingerprinting AI services requires a different approach; you need to look at:
+
+HTTP headers
+JSON response structures
+Error messages
+Endpoint naming conventions
 
 ### **What is a Trust Boundary?**
 
@@ -132,30 +137,28 @@ A trust boundary exists whenever data moves between different security contexts.
 Examples include:
 
 ### **User → AI Application**
-
 User-controlled input enters the system.
 
 ### **AI Application → Model**
-
 Prompts and instructions are passed to the LLM.
 
 ### **Model → External Tools**
-
 The AI interacts with APIs or other systems.
 
 ### **External Data → AI System**
-
 Retrieved content becomes part of model context.
 
-Each trust boundary introduces potential security risks that must be assessed.
+
 
 ---
 
-# **Task 4: Identifying Attack Surfaces**
+# **Task 4: Enumerating AI systems **
 
 ## **Overview**
 
 The room focuses on understanding where attackers may interact with or influence the AI system.
+MLflow Enumeration
+MLflow is the most rewarding service to enumerate because it stores everything in one place and exposes it through a clean REST API. If you find an open MLflow instance...
 
 ### **Common AI Attack Surfaces**
 
@@ -188,11 +191,15 @@ Public-facing APIs often become primary reconnaissance targets.
 
 ---
 
-# **Task 5: AI System Enumeration**
+# **Task 5: Mapping the AI systems**
 
 ## **Overview**
 
 This section introduces methods used to gather information about AI systems.
+Identified AI components in the network, determined which framework each component runs on, and extracted metadata from their APIs. Those are individual findings. This task is about connecting them.
+
+A single exposed MLflow server is a finding.
+The difference between a list of findings and an attack surface map is the connections between them.
 
 ### **Information Gathering Techniques**
 
@@ -226,6 +233,9 @@ Reconnaissance often reveals:
 * Security assumptions
 
 These observations can help security teams identify weaknesses before attackers do.
+
+MITRE ATLAS Mapping
+Everything we have covered in this room maps to the MITRE ATLAS framework. ATLAS is modelled after ATT&CK but specifically covers adversarial threats to AI and ML systems. It contains 15 tactics, 66 techniques, and 46 sub-techniques as of late 2025.
 
 ---
 
