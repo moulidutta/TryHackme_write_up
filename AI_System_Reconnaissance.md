@@ -163,27 +163,21 @@ MLflow is the most rewarding service to enumerate because it stores everything i
 ### **Common AI Attack Surfaces**
 
 #### **Prompts**
-
 Attackers may manipulate prompts to influence model behavior.
 
 #### **Training Data**
-
 Compromised data can affect model outputs.
 
 #### **Vector Databases**
-
 Sensitive information may be exposed through retrieval systems.
 
 #### **Tool Integrations**
-
 Connected services may introduce additional risks.
 
 #### **APIs**
-
 Public-facing APIs often become primary reconnaissance targets.
 
 ### **Reconnaissance Goals**
-
 * Identify exposed services.  
 * Understand available functionality.  
 * Determine integration points.  
@@ -379,6 +373,7 @@ The concepts covered in this room are highly relevant to:
 * SOC Analysts  
 * Red Team Operators
 
+  
 Reconnaissance is often the first step in identifying vulnerabilities and understanding the overall security posture of AI-powered systems.
 
 ---
