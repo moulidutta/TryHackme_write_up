@@ -16,8 +16,6 @@ Before securing an AI system, security professionals must first understand how i
 
 This room introduces the concept of AI System Reconnaissance and explores how attackers and defenders analyze AI-powered applications. The focus is on identifying AI components, understanding system architecture, mapping trust boundaries, and discovering potential attack surfaces before attempting exploitation.
 
-By learning reconnaissance techniques, security professionals can better understand how AI systems operate and where security weaknesses may exist.
-
 ---
 
 # **Learning Objectives**
