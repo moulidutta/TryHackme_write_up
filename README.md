@@ -11,6 +11,7 @@ This repository contains my write-ups and notes from various TryHackMe rooms com
 | AI_Ml Security Threats                    | AI, ML, DL, LLM associated with security risk                                     |
 | Defensive Security Intro                  | security attack defense and tools                                                 |
 | AI_Models _&Data                          | overfitting, quantization, and federated learning associated with security risk   |
+| LLM Security                              | risks of prompt injection, model theft, and memory poisoning                      |
 | AI System Reconnaissance                  | Language Models, Prompt Pipelines, Vector Databases, Retrieval Systems, AI Agents |
 
 
