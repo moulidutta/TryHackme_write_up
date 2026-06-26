@@ -1,5 +1,4 @@
 # TryHackMe Write-Ups
-
 This repository contains my write-ups and notes from various TryHackMe rooms completed as part of my cybersecurity learning journey.
 
 ## Rooms Completed
