@@ -16,8 +16,6 @@ Before securing an AI system, security professionals must first understand how i
 
 This room introduces the concept of AI System Reconnaissance and explores how attackers and defenders analyze AI-powered applications. The focus is on identifying AI components, understanding system architecture, mapping trust boundaries, and discovering potential attack surfaces before attempting exploitation.
 
-By learning reconnaissance techniques, security professionals can better understand how AI systems operate and where security weaknesses may exist.
-
 ---
 
 # **Learning Objectives**
@@ -64,7 +62,7 @@ You cannot effectively secure or assess an AI system without understanding how i
 
 ---
 
-# **Task 2: Understanding the AI Architecture**
+# **Task 2: The AI Infrastructure Stack**
 
 ## **Overview**
 
@@ -119,11 +117,16 @@ Understanding each layer helps identify potential attack vectors.
 
 ---
 
-# **Task 3: Mapping Trust Boundaries**
+# **Task 3: Fingerprinting AI services**
 
 ## **Overview**
 
-One of the most important reconnaissance activities is identifying trust boundaries.
+Fingerprinting AI services requires a different approach; you need to look at:
+
+HTTP headers
+JSON response structures
+Error messages
+Endpoint naming conventions
 
 ### **What is a Trust Boundary?**
 
@@ -132,55 +135,47 @@ A trust boundary exists whenever data moves between different security contexts.
 Examples include:
 
 ### **User → AI Application**
-
 User-controlled input enters the system.
 
 ### **AI Application → Model**
-
 Prompts and instructions are passed to the LLM.
 
 ### **Model → External Tools**
-
 The AI interacts with APIs or other systems.
 
 ### **External Data → AI System**
-
 Retrieved content becomes part of model context.
 
-Each trust boundary introduces potential security risks that must be assessed.
+
 
 ---
 
-# **Task 4: Identifying Attack Surfaces**
+# **Task 4: Enumerating AI systems **
 
 ## **Overview**
 
 The room focuses on understanding where attackers may interact with or influence the AI system.
+MLflow Enumeration
+MLflow is the most rewarding service to enumerate because it stores everything in one place and exposes it through a clean REST API. If you find an open MLflow instance...
 
 ### **Common AI Attack Surfaces**
 
 #### **Prompts**
-
 Attackers may manipulate prompts to influence model behavior.
 
 #### **Training Data**
-
 Compromised data can affect model outputs.
 
 #### **Vector Databases**
-
 Sensitive information may be exposed through retrieval systems.
 
 #### **Tool Integrations**
-
 Connected services may introduce additional risks.
 
 #### **APIs**
-
 Public-facing APIs often become primary reconnaissance targets.
 
 ### **Reconnaissance Goals**
-
 * Identify exposed services.  
 * Understand available functionality.  
 * Determine integration points.  
@@ -188,11 +183,15 @@ Public-facing APIs often become primary reconnaissance targets.
 
 ---
 
-# **Task 5: AI System Enumeration**
+# **Task 5: Mapping the AI systems**
 
 ## **Overview**
 
 This section introduces methods used to gather information about AI systems.
+Identified AI components in the network, determined which framework each component runs on, and extracted metadata from their APIs. Those are individual findings. This task is about connecting them.
+
+A single exposed MLflow server is a finding.
+The difference between a list of findings and an attack surface map is the connections between them.
 
 ### **Information Gathering Techniques**
 
@@ -226,6 +225,9 @@ Reconnaissance often reveals:
 * Security assumptions
 
 These observations can help security teams identify weaknesses before attackers do.
+
+MITRE ATLAS Mapping
+Everything we have covered in this room maps to the MITRE ATLAS framework. ATLAS is modelled after ATT&CK but specifically covers adversarial threats to AI and ML systems. It contains 15 tactics, 66 techniques, and 46 sub-techniques as of late 2025.
 
 ---
 
@@ -305,6 +307,17 @@ The exercise demonstrates how reconnaissance provides the foundation for future 
 
 ## **Room Findings proof work:**
 
+<img width="1154" height="343" alt="Screenshot 2026-06-19 233309" src="https://github.com/user-attachments/assets/39dd5d21-7042-4cfd-968e-a7593d607220" />
+
+<img width="1155" height="438" alt="Screenshot 2026-06-19 233242" src="https://github.com/user-attachments/assets/6498ebfc-b8e8-4c2a-bbcb-eaa761ed7913" />
+
+<img width="1047" height="530" alt="Screenshot 2026-06-19 233213" src="https://github.com/user-attachments/assets/3ddf254d-87de-4221-a890-a639f759a300" />
+
+<img width="1090" height="513" alt="Screenshot 2026-06-19 233148" src="https://github.com/user-attachments/assets/43020a93-cc34-4cb1-81ba-8576dc894743" />
+
+
+
+
 ---
 
 # **Key Concepts Learned**
@@ -358,6 +371,7 @@ The concepts covered in this room are highly relevant to:
 * SOC Analysts  
 * Red Team Operators
 
+  
 Reconnaissance is often the first step in identifying vulnerabilities and understanding the overall security posture of AI-powered systems.
 
 ---
