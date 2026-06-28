@@ -41,18 +41,18 @@ What Is Microsoft Sentinel?
 Given the above concept definitions, Microsoft Sentinel's own definition becomes a combination of the two. It is essentially a scalable, cloud-native solution that provides the following:
 
 # Security Information and Event Management (SIEM) functionality by:
-# * Collecting and querying logs * 
-# * Doing correlation or anomaly detection * 
-# * Creating alerts and incidents based on findings * 
+* Collecting and querying logs * 
+* Doing correlation or anomaly detection * 
+* Creating alerts and incidents based on findings * 
 # Security Orchestration, Automation, and Response (SOAR) functionality by:
-# * Defining playbooks * 
-# * Automating threat responses *
+* Defining playbooks * 
+* Automating threat responses *
 Microsoft Sentinel also delivers security analytics and threat intelligence across the organization. It's a one-stop-shop and bird's-eye view solution for:
 
-# Attack detection
-# Threat visibility
-# Proactive hunting
-# Threat response
+Attack detection
+Threat visibility
+Proactive hunting
+Threat response
 
 Unlike traditional SIEM platforms, Sentinel is fully cloud-based and scales automatically with organizational needs.
 Microsoft Sentinel performs the above actions and enables security operations by means of 4 main pillars:
