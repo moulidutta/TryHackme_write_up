@@ -61,6 +61,8 @@ Collect
 Detect
 Investigate
 Respond
+<img width="1178" height="772" alt="{FB51A62A-3B67-46B4-B343-D52E738E5DD7}" src="https://github.com/user-attachments/assets/8c1a4a8b-72ba-4b14-aec9-027c6e76001b" />
+
 
 ### **Key Features**
 
