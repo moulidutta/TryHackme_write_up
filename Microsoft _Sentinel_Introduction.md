@@ -50,18 +50,18 @@ Given the above concept definitions, Microsoft Sentinel's own definition becomes
   
 Microsoft Sentinel also delivers security analytics and threat intelligence across the organization. It's a one-stop-shop and bird's-eye view solution for:
 
-Attack detection
-Threat visibility
-Proactive hunting
-Threat response
+* Attack detection
+* Threat visibility
+* Proactive hunting
+* Threat response
 
 Unlike traditional SIEM platforms, Sentinel is fully cloud-based and scales automatically with organizational needs.
 Microsoft Sentinel performs the above actions and enables security operations by means of 4 main pillars:
 
-Collect
-Detect
-Investigate
-Respond
+* Collect
+* Detect
+* Investigate
+* Respond
 <img width="1178" height="772" alt="{FB51A62A-3B67-46B4-B343-D52E738E5DD7}" src="https://github.com/user-attachments/assets/8c1a4a8b-72ba-4b14-aec9-027c6e76001b" />
 
 
@@ -82,15 +82,15 @@ Microsoft Sentinel enables SOC analysts to monitor and investigate security even
 
 # **Task 3: How Microsoft Sentinel Works**
 
-# Phase 1: Collect
+* Phase 1: Collect
 
 Data connectors: The first step is to ingest data into Microsoft Sentinel. This is exactly what data connectors are for. There are 100+ connectors to cover all various data sources and scenarios.
 Log retention: Once the data has been ingested into Microsoft Sentinel, it must be stored for further correlation and analysis. This log storage mechanism is called Log Analytics workspaces. Data stored in these workspaces can be queried to gain further insights using Kusto Query Language (KQL).
-# Phase 2: Detect
+* Phase 2: Detect
 Workbooks: Workbooks are essentially dashboards in Microsoft Sentinel used to visualize data. There are many built-in workbooks, and custom ones can also be created by utilizing KQL.
 Analytics rules: What good is a bunch of logs and visualizations if we can't gain insights from them? That's why there are Analytics rules. Analytics rules provide proactive analytics so that SOC teams get notified when suspicious things happen. The output of running Analytics rules are security alerts and incidents.
 Threat hunting: Reacting to security incidents only after they happen is not good enough. SOC analysts also need to perform proactive threat hunting. Microsoft Sentinel has over 200 built-in threat-hunting queries to support that needle-in-a-haystack job.
-# Phase 3: Investigate
+* Phase 3: Investigate
 Incidents and investigations: Once Analytics rules detect suspicious activities, i.e., once an alert is triggered, security incidents are created for SOC analysts to triage and investigate. Typical incident management activities include:
 Changing status
 Assigning  for further investigation
@@ -98,12 +98,12 @@ Mapping entities to the investigation
 Investigating the incident timeline
 Deep-dive into investigation details using investigation maps
 Recording investigation comments
-# Phase 4: Respond
+* Phase 4: Respond
 Automation via playbooks: One of the main challenges of a SOC team is alert fatigue. To overcome alert fatigue, automation in security operations is a must. This is done by automated workflows, also known as playbooks, in response to events. By doing so, automated responses can be provided for:
-Incident management
-Enrichment
-Investigation
-Remediation
+ * Incident management
+ * Enrichment
+ * Investigation
+ * Remediation
 
 
 ### **Core Components**
@@ -123,7 +123,7 @@ Used to collect logs from:
 
 ---
 
-# **Task 4: When to use Microsoft Sentinel **
+# Task 4: When to use Microsoft Sentinel
 
 hen there is a necessity to monitor cloud and on-premises infrastructures for security. Surely, many security products could be used for this purpose. However, where Microsoft Sentinel separates from the crowd is its ability to enable the majority of SOC teams' tasks from a single pane and with a 360-degree bird's-eye approach.
 
@@ -137,7 +137,7 @@ Implementing automated responses to alerts and incidents
 
 ---
 
-# **Room Answers**
+# Room Answers
 
 ***What security unit is responsible for protecting the organization against security threats?***  
 ***Security Operations Center***
@@ -247,7 +247,7 @@ Microsoft Sentinel is widely adopted across enterprise environments, making fami
 
 ---
 
-# **Final Thoughts**
+# Final Thoughts
 
 This room provides an excellent introduction to Microsoft Sentinel and demonstrates how modern cloud-native SIEM platforms support security monitoring, threat detection, incident investigation, and automated response.
 
