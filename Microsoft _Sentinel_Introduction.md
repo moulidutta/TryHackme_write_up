@@ -35,20 +35,35 @@ By completing this room, I learned:
 
 ---
 
-# **Task 1: Introduction to Microsoft Sentinel**
+# **Task 2: Introduction to Microsoft Sentinel**
 
-## **Overview**
+What Is Microsoft Sentinel?
+Given the above concept definitions, Microsoft Sentinel's own definition becomes a combination of the two. It is essentially a scalable, cloud-native solution that provides the following:
 
-This task introduces Microsoft Sentinel and explains its role within Microsoft's cloud security ecosystem.
+Security Information and Event Management (SIEM) functionality by:
+* Collecting and querying logs
+* Doing correlation or anomaly detection
+* Creating alerts and incidents based on findings
+Security Orchestration, Automation, and Response (SOAR) functionality by:
+* Defining playbooks
+* Automating threat responses
+  
+Microsoft Sentinel also delivers security analytics and threat intelligence across the organization. It's a one-stop-shop and bird's-eye view solution for:
 
-Microsoft Sentinel is a cloud-native SIEM and SOAR platform that enables organizations to:
-
-* Collect security logs  
-* Detect threats  
-* Investigate incidents  
-* Automate security responses
+* Attack detection
+* Threat visibility
+* Proactive hunting
+* Threat response
 
 Unlike traditional SIEM platforms, Sentinel is fully cloud-based and scales automatically with organizational needs.
+Microsoft Sentinel performs the above actions and enables security operations by means of 4 main pillars:
+
+* Collect
+* Detect
+* Investigate
+* Respond
+<img width="1178" height="772" alt="{FB51A62A-3B67-46B4-B343-D52E738E5DD7}" src="https://github.com/user-attachments/assets/8c1a4a8b-72ba-4b14-aec9-027c6e76001b" />
+
 
 ### **Key Features**
 
@@ -65,11 +80,31 @@ Microsoft Sentinel enables SOC analysts to monitor and investigate security even
 
 ---
 
-# **Task 2: Sentinel Architecture**
+# **Task 3: How Microsoft Sentinel Works**
 
-## **Overview**
+* Phase 1: Collect
 
-This section explains how Microsoft Sentinel processes security data.
+Data connectors: The first step is to ingest data into Microsoft Sentinel. This is exactly what data connectors are for. There are 100+ connectors to cover all various data sources and scenarios.
+Log retention: Once the data has been ingested into Microsoft Sentinel, it must be stored for further correlation and analysis. This log storage mechanism is called Log Analytics workspaces. Data stored in these workspaces can be queried to gain further insights using Kusto Query Language (KQL).
+* Phase 2: Detect
+Workbooks: Workbooks are essentially dashboards in Microsoft Sentinel used to visualize data. There are many built-in workbooks, and custom ones can also be created by utilizing KQL.
+Analytics rules: What good is a bunch of logs and visualizations if we can't gain insights from them? That's why there are Analytics rules. Analytics rules provide proactive analytics so that SOC teams get notified when suspicious things happen. The output of running Analytics rules are security alerts and incidents.
+Threat hunting: Reacting to security incidents only after they happen is not good enough. SOC analysts also need to perform proactive threat hunting. Microsoft Sentinel has over 200 built-in threat-hunting queries to support that needle-in-a-haystack job.
+* Phase 3: Investigate
+Incidents and investigations: Once Analytics rules detect suspicious activities, i.e., once an alert is triggered, security incidents are created for SOC analysts to triage and investigate. Typical incident management activities include:
+Changing status
+Assigning  for further investigation
+Mapping entities to the investigation
+Investigating the incident timeline
+Deep-dive into investigation details using investigation maps
+Recording investigation comments
+* Phase 4: Respond
+Automation via playbooks: One of the main challenges of a SOC team is alert fatigue. To overcome alert fatigue, automation in security operations is a must. This is done by automated workflows, also known as playbooks, in response to events. By doing so, automated responses can be provided for:
+ * Incident management
+ * Enrichment
+ * Investigation
+ * Remediation
+
 
 ### **Core Components**
 
@@ -86,177 +121,23 @@ Used to collect logs from:
 * Endpoint Security Products  
 * Third-party solutions
 
-#### **Log Analytics Workspace**
+---
 
-The central repository where all collected logs are stored.
+# Task 4: When to use Microsoft Sentinel
 
-It enables:
+hen there is a necessity to monitor cloud and on-premises infrastructures for security. Surely, many security products could be used for this purpose. However, where Microsoft Sentinel separates from the crowd is its ability to enable the majority of SOC teams' tasks from a single pane and with a 360-degree bird's-eye approach.
 
-* Log searches  
-* Threat hunting  
-* Alert generation  
-* Investigation
+Microsoft Sentinel serves as a solution for conducting security operations across cloud and on-premises environments. Security operations encompass various tasks such as:
 
-#### **Analytics Rules**
-
-Used to detect suspicious behavior.
-
-Rules analyze incoming logs and generate alerts when conditions are met.
-
-#### **Incidents**
-
-Multiple alerts can be grouped together into a single incident to simplify investigations.
+Visualizing log data
+Detecting anomalies
+Conducting threat hunting
+Investigating security incidents
+Implementing automated responses to alerts and incidents
 
 ---
 
-# **Task 3: Data Collection**
-
-## **Overview**
-
-Before Sentinel can detect threats, it must ingest security logs.
-
-### **Common Data Sources**
-
-* Azure Activity Logs  
-* Windows Event Logs  
-* Microsoft Defender  
-* Microsoft Entra ID  
-* Office 365  
-* Firewall Logs  
-* Endpoint Detection & Response (EDR)  
-* Custom Applications
-
-### **Why Data Collection Matters**
-
-A SIEM is only as effective as the data it receives.
-
-Poor visibility leads to missed detections.
-
----
-
-# **Task 4: Analytics Rules**
-
-## **Overview**
-
-Analytics Rules are responsible for identifying suspicious activity.
-
-### **Types of Rules**
-
-#### **Scheduled Rules**
-
-Run periodically against collected logs.
-
-#### **Near Real-Time Rules**
-
-Detect events almost immediately after ingestion.
-
-#### **Microsoft Security Templates**
-
-Prebuilt detection rules provided by Microsoft.
-
-### **Typical Detection Examples**
-
-* Multiple failed logins  
-* Privilege escalation  
-* Malware detections  
-* Suspicious PowerShell activity  
-* Impossible travel logins
-
----
-
-# **Task 5: Investigating Incidents**
-
-## **Overview**
-
-Once an analytics rule triggers, Sentinel creates an alert or incident.
-
-SOC analysts investigate by reviewing:
-
-* Timeline  
-* Affected users  
-* Devices  
-* IP addresses  
-* Authentication logs  
-* Related alerts
-
-### **Investigation Workflow**
-
-1. Open Incident  
-2. Review Alert Details  
-3. Identify Impacted Assets  
-4. Examine Evidence  
-5. Determine Severity  
-6. Escalate or Close
-
----
-
-# **Task 6: Workbooks**
-
-## **Overview**
-
-Workbooks provide visual dashboards for security monitoring.
-
-Examples include:
-
-* Authentication Trends  
-* Failed Login Attempts  
-* Malware Activity  
-* Network Traffic  
-* Security Incidents  
-* Threat Intelligence
-
-### **Benefits**
-
-* Better visibility  
-* Faster investigations  
-* Executive reporting
-
----
-
-# **Task 7: Automation with Playbooks**
-
-## **Overview**
-
-Sentinel integrates with Microsoft Logic Apps to automate repetitive tasks.
-
-### **Common Playbook Actions**
-
-* Send email notifications  
-* Create ServiceNow tickets  
-* Block malicious IP addresses  
-* Disable compromised accounts  
-* Notify SOC teams  
-* Trigger response workflows
-
-Automation reduces analyst workload and speeds up incident response.
-
----
-
-# **Task 8: Threat Hunting**
-
-## **Overview**
-
-Threat Hunting involves proactively searching for malicious activity.
-
-Sentinel uses Kusto Query Language (KQL) for log analysis.
-
-Example hunting activities include:
-
-* Failed login searches  
-* Suspicious PowerShell execution  
-* Malware detections  
-* Lateral movement  
-* Privilege escalation
-
-### **Why Threat Hunting Matters**
-
-Not every attack generates an alert.
-
-Threat hunting helps analysts identify hidden threats.
-
----
-
-# **Room Answers**
+# Room Answers
 
 ***What security unit is responsible for protecting the organization against security threats?***  
 ***Security Operations Center***
@@ -366,7 +247,7 @@ Microsoft Sentinel is widely adopted across enterprise environments, making fami
 
 ---
 
-# **Final Thoughts**
+# Final Thoughts
 
 This room provides an excellent introduction to Microsoft Sentinel and demonstrates how modern cloud-native SIEM platforms support security monitoring, threat detection, incident investigation, and automated response.
 
