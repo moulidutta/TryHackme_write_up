@@ -113,6 +113,9 @@ A table typically contains:
 * IP Address  
 * Process Name
 
+  <img width="1318" height="770" alt="{42A937F4-B282-4EEE-BC79-D2AB28A1F0CA}" src="https://github.com/user-attachments/assets/fe0fdb08-86cf-437f-8399-44b7b7431fcb" />
+
+
 Understanding table structure is the first step in writing effective queries.
 
 ---
